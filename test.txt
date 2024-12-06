@@ -1,0 +1,14 @@
+start
+ int diferenca, maiorPeso;
+ string joca, luan;
+ nome = {joca}
+
+ int pesoJoca = 87.721
+ int pesoLuan = 43
+ /*diferenca de idade*/
+
+ diferenca = pesoJoca-pesoLuan
+ if(diferenca < 0) then diferenca=diferenca*-1
+ print({A diferenca de peso entre eles eh:});
+ print({diferenca})
+exit
