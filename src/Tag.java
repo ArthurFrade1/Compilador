@@ -17,6 +17,7 @@ public class Tag {
     public final static int MUL = 302;   // "*"
     public final static int DIV = 303;   // "/"
     public final static int MOD = 304;   // "%"
+    public final static int NOT = 247;   // "-"
 
     // Operadores lógicos
     public final static int AND = 310;   // "&&"
@@ -38,7 +39,6 @@ public class Tag {
     public final static int START = 334;   // Início do programa
     public final static int EXIT = 335;    // Sair do programa
     public final static int INT = 336;     // Números inteiros
-    public final static int FLOATING = 337;   // Números de ponto flutuante
     public final static int STRING = 338;  // Literais (strings)
     public final static int IF = 339;      // Palavra reservada "if"
     public final static int THEN = 340;    // Palavra reservada "then"

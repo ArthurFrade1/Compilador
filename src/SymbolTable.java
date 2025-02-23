@@ -13,7 +13,7 @@ public class SymbolTable {
         table.put("start", new Word("start", Tag.START));   // Início do programa
         table.put("exit", new Word("exit", Tag.EXIT));      // Sair do programa
         table.put("int", new Word("int", Tag.INT));         // Números inteiros
-        table.put("floating", new Word("floating", Tag.FLOATING)); // Números de ponto flutuante
+        table.put("float", new Word("float", Tag.FLOAT)); // Números de ponto flutuante
         table.put("string", new Word("string", Tag.STRING)); // Literais (strings)
         table.put("if", new Word("if", Tag.IF));            // Palavra reservada "if"
         table.put("then", new Word("then", Tag.THEN));      // Palavra reservada "then"

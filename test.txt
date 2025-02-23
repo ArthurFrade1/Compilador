@@ -7,6 +7,7 @@ start
  int pesoLuan = 43
  /*diferenca de idade*/
 
+
  diferenca = pesoJoca-pesoLuan
  if(diferenca < 0) then diferenca=diferenca*-1
  print({A diferenca de peso entre eles eh:});

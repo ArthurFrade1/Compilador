@@ -1,7 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.FileVisitResult;
 
 public class Lexer {
     public char ch=' ';
@@ -11,9 +10,9 @@ public class Lexer {
     public FileReader file;
     SymbolTable symbolTable;
 
-    public Lexer(SymbolTable symbolTable) throws FileNotFoundException{
+    public Lexer(String filePath, SymbolTable symbolTable) throws FileNotFoundException{
         try{
-            file = new FileReader ("./test.txt");
+            file = new FileReader (filePath);
         }
             catch(FileNotFoundException e){
             System.out.println("Arquivo não encontrado");
@@ -260,6 +259,7 @@ public class Lexer {
             if(ch=='*'){
                 while (true) {
                     readch();
+                    if(ch == '\n') line++;
                     if(ch == (char)-1)
                         throw new AnaliseLexicaException("Unclosed comment detected!", line, column);
                     if(ch=='*'){
