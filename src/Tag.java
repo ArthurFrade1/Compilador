@@ -3,6 +3,7 @@ import java.util.Map;
 
 public class Tag {
     // Operadores relacionais
+    public final static int NULL = 0;
     public final static int EQ = 288;    // "=="
     public final static int ASSIGN = 294;    // "=" (símbolo de atribuição)
     public final static int NE = 289;    // "!="
@@ -48,4 +49,7 @@ public class Tag {
     public final static int PRINT = 344;   // Palavra reservada "print" (saída de dados)
     public final static int DO = 345;    // Palavra reservada "do"
     public final static int WHILE = 346;   // Palavra reservada "while"
+
+
+    public final static int ERROR = 999;   // Palavra reservada "while"
 }

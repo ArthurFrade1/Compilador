@@ -218,7 +218,7 @@ public class Lexer {
                         return new Num(val, Tag.FLOAT);
                     }
                     else
-                        return new Num(val, Tag.INTEGER);
+                        return new Num(val, Tag.INT);
                 }
 
                 if(isFloat){
